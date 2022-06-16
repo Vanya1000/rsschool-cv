@@ -76,7 +76,11 @@
 							</div>
 							<div class="education__item">
 								<p class="education__item_date"><span class="modify">2021 - 2022</span></p>
-								<p>RS Schools Course «JavaScript/Front-end. Stage 0»</p>
+								<p>RS Schools Course «JavaScript/Front-end. Pre-School»</p>
+							</div>
+							<div class="education__item">
+								<p class="education__item_date"><span class="modify">2022</span></p>
+								<p>RS Schools Course «JavaScript/Front-end. 2022Q1»</p>
 							</div>
 						</section>
 					</div>
@@ -89,6 +93,7 @@
 								<li class="skills__item">JS</li>
 								<li class="skills__item">TypeScript</li>
 								<li class="skills__item">React / Redux</li>
+								<li class="skills__item">nodeJS(basic)</li>
 								<li class="skills__item">Git&Github</li>
 								<li class="skills__item">HTML5</li>
 								<li class="skills__item">CSS3</li>
@@ -101,7 +106,7 @@
 								Foreign languages
 							</h2>
 							<ul class="languages__wrapper">
-								<li class="languages__item">English(A2)</li>
+								<li class="languages__item">English(B1) in progress</li>
 								<li class="languages__item">Belarusian - Native</li>
 							</ul>
 						</section>
@@ -114,7 +119,7 @@
 								About me
 							</h2>
 							<p class="about-me__text">
-								Hi! I am a beginner front-end developer. I work well in the company. I study new technologies
+								Hi! I am front-end developer. I work well in the company. I study new technologies
 								with great interest. Always open to new things.
 							</p>
 						</section>
@@ -129,8 +134,28 @@
 							</p>
 							<ul class="projects__wrapper">
 								<li class="project__item">
+									<a href="https://vanya1000.github.io/my-app/#/" target="_blank">
+										Learning time tracker (React, Redux, TypeScript, express, mongoDB)
+									</a>
+								</li>
+								<li class="project__item">
+									<a href="https://github.com/Vanya1000/HTML-builder" target="_blank">
+										Micro webPack:) (nodeJS) (stage 1)
+									</a>
+								</li>
+								<li class="project__item">
+									<a href="https://vanya1000.github.io/Virtual-Keyboard/" target="_blank">
+										Virtual Keyboard (stage 1)
+									</a>
+								</li>
+								<li class="project__item">
+									<a href="https://rolling-scopes-school.github.io/vanya1000-JSFE2022Q1/shelter/pages/main/index.html" target="_blank">
+										Shelter (stage 1)
+									</a>
+								</li>
+								<li class="project__item">
 									<a href="https://vanya1000.github.io/reactApp/" target="_blank">
-										React / redux social network (under development)
+										social network (React / redux)
 									</a>
 								</li>
 								<li class="project__item">
@@ -154,11 +179,6 @@
 									</a>
 								</li>
 								<li class="project__item">
-									<a href="https://vanya1000.github.io/DB-landing-page/" target="_blank">
-										Landing page
-									</a>
-								</li>
-								<li class="project__item">
 									<a href="https://vanya1000.github.io/game/" target="_blank">
 										Battleship JS
 									</a>
@@ -175,8 +195,9 @@
 								Before RS School he was self-education. I have read and studied these books and resources:
 							</p>
 							<ul class="courses__wrapper">
+								<li class="courses__item">RS Schools Course «JavaScript/Front-end. Stage 2 (in progress)»</li>
+								<li class="courses__item">RS Schools Course «JavaScript/Front-end. Stage 1»</li>
 								<li class="courses__item">RS Schools Course «JavaScript/Front-end. Stage 0»</li>
-								<li class="courses__item">RS Schools Course «JavaScript/Front-end. Stage 1» (in progress)</li>
 								<li class="courses__item">Head First HTML and CSS</li>
 								<li class="courses__item">Head First JavaScript Programming</li>
 								<li class="courses__item">JavaScript Manual on learnjavascript.ru (in progress)</li>
@@ -190,22 +211,17 @@
 								Code example
 							</h2>
 							<div class="code-example__task">
-								<p>Write a function that takes an integer as input, and returns the number of bits that are
-									equal to one in the binary representation of that number. You can guarantee that input is
-									non-negative.</p>
-								<p>Example: The binary representation of 1234 is 10011010010, so the function should return 5 in
-									this case</p>
+								<p>Our mission: write a function nouveau (that's French for "new") which takes one function parameter (the constructor),
+								plus an unknown number of additional parameters of any type (arguments for the constructor). When invoked, nouveau
+								should do everything new does and return the same object new would evaluate to, as specified above.</p>
 							</div>
 							<div class="code-example__code-block">
 								<pre>
-<span class="let"></span>let countBits = <span class="let">function</span> (n) {
-  <span class="let">let</span> bynary = n.toString(2);
-  <span class="let">let</span> acc = 0;
-  <span class="let">for</span> (<span class="let">let</span> item <span class="let">of</span> bynary) {
-    item == 1 ? acc+=1 : item ;
-  }
-  <span class="let">return</span> acc;
-};
+<span class="let">function</span> nouveau(Constructor, ...args) {
+  <span class="let">let</span> obj = Object.create(Constructor.prototype)
+  <span class="let">let</span> ret = Constructor.apply(obj, args)
+  <span class="let">return</span> ret !== null && (<span class="let">typeof</span> ret === 'object' || <span class="let">typeof</span> ret === 'function') ? ret : obj
+}
 								</pre>
 							</div>
 						</section>
